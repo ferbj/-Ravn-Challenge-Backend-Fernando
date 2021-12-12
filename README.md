@@ -83,7 +83,8 @@ INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (25, 'Kell
 INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (26, 'Courtney Adkins', '1906-04-17 00:00:00');
 INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (27, 'Kelli Boyle', '1908-07-16 00:00:00');
 
-#table books
+#table Books
+
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (1, 14, '0-226-28500-6');
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (2, 1, '0-553-32548-5');
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (3, 12, '1-56655-944-8');
@@ -136,6 +137,7 @@ INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (49, 4, '0-88975
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (50, 18, '0-18-878536-1');
 
 #table sale_items
+
 INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (1, 9, 'Jeffery Martin', 'S/ 43.00', 3);
 INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (2, 10, 'Jeffrey Hodges', 'S/ 129.00', 14);
 INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (3, 26, 'Victoria Smith', 'S/ 121.00', 7);
