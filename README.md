@@ -53,7 +53,7 @@ CREATE TABLE sale_items (
 
 2.- Seed the database with the following commands: 
 
-#Table Authors 
+/*Table Authors */
 
 INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (1, 'Lorelai Gilmore', '1968-04-25 00:00:00');
 INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (2, 'Agatha Mary Clarissa Miller', '1890-09-15 00:00:00');
@@ -83,7 +83,7 @@ INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (25, 'Kell
 INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (26, 'Courtney Adkins', '1906-04-17 00:00:00');
 INSERT INTO "public"."authors" ("id", "name", "date_of_birth") VALUES (27, 'Kelli Boyle', '1908-07-16 00:00:00');
 
-#table Books
+/*table Books*/
 
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (1, 14, '0-226-28500-6');
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (2, 1, '0-553-32548-5');
@@ -136,7 +136,7 @@ INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (48, 2, '1-04-07
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (49, 4, '0-88975-055-6');
 INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (50, 18, '0-18-878536-1');
 
-#table sale_items
+/*table sale_items*/
 
 INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (1, 9, 'Jeffery Martin', 'S/ 43.00', 3);
 INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (2, 10, 'Jeffrey Hodges', 'S/ 129.00', 14);
