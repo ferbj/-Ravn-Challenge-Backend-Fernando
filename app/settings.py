@@ -97,12 +97,12 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ravn-back',
         'USER':'postgres',
-        'PASSWORD':'root',
-        'HOST':'localhost',
-        'PORT':'5433'
+        'PASSWORD':'postgres',
+        'HOST':'db',
+        'PORT':'5432'
     }
 }
 

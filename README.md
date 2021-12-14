@@ -3,11 +3,11 @@ Django is a high-level Python web framework that encourages rapid development an
 
 All documentation is in the "docs" directory and online at https://docs.djangoproject.com/en/stable/. If you're just getting started, here's how we recommend you read the docs:
 
-First, read docs/intro/install.txt for instructions on installing Django.
-Next, work through the tutorials in order (docs/intro/tutorial01.txt, docs/intro/tutorial02.txt, etc.).
-If you want to set up an actual deployment server, read docs/howto/deployment/index.txt for instructions.
-You'll probably want to read through the topical guides (in docs/topics) next; from there you can jump to the HOWTOs (in docs/howto) for specific problems, and check out the reference (docs/ref) for gory details.
-See docs/README for instructions on building an HTML version of the docs.
+First, read doc$intro/install.txt for instructions on installing Django.
+Next, work through the tutorials in order (doc$intro/tutorial01.txt, doc$intro/tutorial02.txt, etc.).
+If you want to set up an actual deployment server, read doc$howto/deployment/index.txt for instructions.
+You'll probably want to read through the topical guides (in doc$topics) next; from there you can jump to the HOWTOs (in doc$howto) for specific problems, and check out the reference (doc$ref) for gory details.
+See doc$README for instructions on building an HTML version of the docs.
 Docs are updated rigorously. If you find any problems in the docs, or think they should be clarified in any way, please take 30 seconds to fill out a ticket here: https://code.djangoproject.com/newticket
 
 To get more help:
@@ -16,10 +16,10 @@ Join the #django channel on irc.libera.chat. Lots of helpful people hang out the
 Join the django-users mailing list, or read the archives, at https://groups.google.com/group/django-users.
 To contribute to Django:
 
-Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for information about getting involved.
+Check out https://docs.djangoproject.com/en/dev/internal$contributing/ for information about getting involved.
 To run Django's test suite:
 
-Follow the instructions in the "Unit tests" section of docs/internals/contributing/writing-code/unit-tests.txt, published online at https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests
+Follow the instructions in the "Unit tests" section of doc$internal$contributing/writing-code/unit-tests.txt, published online at https://docs.djangoproject.com/en/dev/internal$contributing/writing-code/unit-test$#running-the-unit-tests
 Supporting the Development of Django
 Django's development depends on your contributions.
 
@@ -138,56 +138,56 @@ INSERT INTO "public"."books" ("id", "author_id", "isbn") VALUES (50, 18, '0-18-8
 
 /*table sale_items*/
 
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (1, 9, 'Jeffery Martin', 'S/ 43.00', 3);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (2, 10, 'Jeffrey Hodges', 'S/ 129.00', 14);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (3, 26, 'Victoria Smith', 'S/ 121.00', 7);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (4, 17, 'Kimberly Daniel', 'S/ 97.00', 6);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (5, 21, 'Kimberly Howard', 'S/ 140.00', 5);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (6, 6, 'Elijah Hamilton', 'S/ 17.00', 19);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (7, 23, 'Ryan Chung', 'S/ 75.00', 4);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (8, 18, 'Michelle Rodriguez', 'S/ 53.00', 4);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (9, 13, 'Jillian Smith', 'S/ 34.00', 20);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (10, 3, 'Teresa Thompson', 'S/ 21.00', 11);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (11, 5, 'Amber Davis', 'S/ 116.00', 17);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (12, 11, 'Anthony Thompson', 'S/ 117.00', 18);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (13, 17, 'Henry Hopkins', 'S/ 133.00', 1);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (14, 19, 'Andrea Phillips', 'S/ 20.00', 10);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (15, 22, 'Heather Adkins', 'S/ 69.00', 11);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (16, 9, 'Melanie Bryant', 'S/ 30.00', 17);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (17, 26, 'Teresa Jackson', 'S/ 27.00', 3);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (18, 5, 'Jessica Johnson', 'S/ 15.00', 7);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (19, 8, 'Lisa Briggs', 'S/ 52.00', 15);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (20, 10, 'Shawn Clay', 'S/ 55.00', 18);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (21, 25, 'Eric Soto DDS', 'S/ 69.00', 14);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (22, 4, 'Mrs. Jessica Thompson', 'S/ 41.00', 8);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (23, 6, 'Chad Castillo', 'S/ 100.00', 20);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (24, 13, 'Veronica Martin', 'S/ 85.00', 15);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (25, 5, 'Jamie Neal', 'S/ 131.00', 7);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (26, 5, 'Cassandra Walter', 'S/ 37.00', 16);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (27, 25, 'Jordan Santana', 'S/ 120.00', 8);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (28, 21, 'Robert Nguyen', 'S/ 56.00', 14);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (29, 17, 'Kathryn Johnson', 'S/ 70.00', 14);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (30, 6, 'Michelle Boyd', 'S/ 138.00', 4);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (31, 5, 'Brian Adkins', 'S/ 70.00', 10);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (32, 25, 'Jeremy Hill', 'S/ 41.00', 7);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (33, 18, 'Michael Carter', 'S/ 144.00', 16);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (34, 19, 'Jeffrey Vazquez', 'S/ 23.00', 8);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (35, 9, 'Michael Nguyen', 'S/ 130.00', 13);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (36, 22, 'John Davila', 'S/ 86.00', 18);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (37, 17, 'Travis Miller', 'S/ 39.00', 8);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (38, 17, 'Robert Hill', 'S/ 72.00', 16);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (39, 4, 'Jennifer Rivera', 'S/ 95.00', 2);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (40, 25, 'Carol Warren', 'S/ 17.00', 11);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (41, 4, 'Chad Dunn', 'S/ 140.00', 5);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (42, 16, 'Alicia Scott', 'S/ 18.00', 15);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (43, 19, 'Paula Hall', 'S/ 63.00', 18);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (44, 27, 'Sandra Jimenez', 'S/ 135.00', 3);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (45, 14, 'Miss Sandra Jimenez', 'S/ 93.00', 13);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (46, 17, 'Kayla Higgins', 'S/ 85.00', 19);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (47, 8, 'Eileen Hoover', 'S/ 132.00', 4);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (48, 6, 'Travis Gray', 'S/ 68.00', 8);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (49, 2, 'Christopher Clay', 'S/ 144.00', 1);
-INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (50, 17, 'Carrie Bowman', 'S/ 112.00', 4);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (1, 9, 'Jeffery Martin', '$ 43.00', 3);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (2, 10, 'Jeffrey Hodges', '$ 129.00', 14);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (3, 26, 'Victoria Smith', '$ 121.00', 7);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (4, 17, 'Kimberly Daniel', '$ 97.00', 6);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (5, 21, 'Kimberly Howard', '$ 140.00', 5);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (6, 6, 'Elijah Hamilton', '$ 17.00', 19);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (7, 23, 'Ryan Chung', '$ 75.00', 4);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (8, 18, 'Michelle Rodriguez', '$ 53.00', 4);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (9, 13, 'Jillian Smith', '$ 34.00', 20);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (10, 3, 'Teresa Thompson', '$ 21.00', 11);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (11, 5, 'Amber Davis', '$ 116.00', 17);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (12, 11, 'Anthony Thompson', '$ 117.00', 18);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (13, 17, 'Henry Hopkins', '$ 133.00', 1);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (14, 19, 'Andrea Phillips', '$ 20.00', 10);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (15, 22, 'Heather Adkins', '$ 69.00', 11);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (16, 9, 'Melanie Bryant', '$ 30.00', 17);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (17, 26, 'Teresa Jackson', '$ 27.00', 3);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (18, 5, 'Jessica Johnson', '$ 15.00', 7);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (19, 8, 'Lisa Briggs', '$ 52.00', 15);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (20, 10, 'Shawn Clay', '$ 55.00', 18);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (21, 25, 'Eric Soto DDS', '$ 69.00', 14);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (22, 4, 'Mrs. Jessica Thompson', '$ 41.00', 8);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (23, 6, 'Chad Castillo', '$ 100.00', 20);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (24, 13, 'Veronica Martin', '$ 85.00', 15);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (25, 5, 'Jamie Neal', '$ 131.00', 7);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (26, 5, 'Cassandra Walter', '$ 37.00', 16);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (27, 25, 'Jordan Santana', '$ 120.00', 8);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (28, 21, 'Robert Nguyen', '$ 56.00', 14);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (29, 17, 'Kathryn Johnson', '$ 70.00', 14);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (30, 6, 'Michelle Boyd', '$ 138.00', 4);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (31, 5, 'Brian Adkins', '$ 70.00', 10);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (32, 25, 'Jeremy Hill', '$ 41.00', 7);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (33, 18, 'Michael Carter', '$ 144.00', 16);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (34, 19, 'Jeffrey Vazquez', '$ 23.00', 8);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (35, 9, 'Michael Nguyen', '$ 130.00', 13);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (36, 22, 'John Davila', '$ 86.00', 18);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (37, 17, 'Travis Miller', '$ 39.00', 8);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (38, 17, 'Robert Hill', '$ 72.00', 16);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (39, 4, 'Jennifer Rivera', '$ 95.00', 2);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (40, 25, 'Carol Warren', '$ 17.00', 11);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (41, 4, 'Chad Dunn', '$ 140.00', 5);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (42, 16, 'Alicia Scott', '$ 18.00', 15);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (43, 19, 'Paula Hall', '$ 63.00', 18);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (44, 27, 'Sandra Jimenez', '$ 135.00', 3);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (45, 14, 'Miss Sandra Jimenez', '$ 93.00', 13);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (46, 17, 'Kayla Higgins', '$ 85.00', 19);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (47, 8, 'Eileen Hoover', '$ 132.00', 4);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (48, 6, 'Travis Gray', '$ 68.00', 8);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (49, 2, 'Christopher Clay', '$ 144.00', 1);
+INSERT INTO "public"."sale_items" ("id", "book_id", "customer_name", "item_price", "quantity") VALUES (50, 17, 'Carrie Bowman', '$ 112.00', 4);
 
 1.- Challenge SQL
 1.1.-Who are the first 10 authors ordered by date_of_birth?
