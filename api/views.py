@@ -2,7 +2,7 @@ from django.http.response import JsonResponse
 from rest_framework import  viewsets
 # Create your views here.
 from django.shortcuts import render
-from django.db import connection
+from django.db import connection 
 
 class AuthorView(viewsets.ModelViewSet):
     
